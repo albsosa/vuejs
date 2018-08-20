@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Primera aplicación en Vue JS</title>
+	<title>Computed Properties</title>
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 <body>
 	<div id="myapp">
-		<span v-text="mensaje"></span>
-		<!-- Interpolación -->
-		<p>{{mostrarMensaje()}}</p>
+		<button v-on:click="primero++">Incrementar el Primero</button>
+		<button v-on:click="segundo++">Incrementar el segundo</button>
+		<button v-on:click="tercero++">Incrementar el tercero</button>
+		<button v-on:click="cuarto++">Incrementar el cuarto</button>
+		<p> Primero: {{primero}}</p>
+		<p>segundo: {{segundo}}</p>
+		<p>tercero: {{tercero}}</p>
+		<p>cuarto: {{cuarto}}</p>
+		<p>suma: {{total}}</p>
 	</div>
 <script type="text/javascript" src="vue.js"></script>
 </body>
